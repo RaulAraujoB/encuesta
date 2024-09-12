@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Conectar con el archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta de Satisfacción</h1>
+        <p>Tu opinión es muy importante para nosotros. Por favor, responde las siguientes preguntas:</p>
+        
+        <form action="procesar-encuesta.php" method="post">
+            <!-- Pregunta 1 -->
+            <div class="form-group">
+                <label for="satisfaccion-general">1. ¿Qué tan satisfecho estás con nuestro servicio en general?</label>
+                <select id="satisfaccion-general" name="satisfaccion-general">
+                    <option value="Muy Satisfecho">Muy Satisfecho</option>
+                    <option value="Satisfecho">Satisfecho</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Insatisfecho">Insatisfecho</option>
+                    <option value="Muy Insatisfecho">Muy Insatisfecho</option>
+                </select>
+            </div>
+            
+            <!-- Pregunta 2 -->
+            <div class="form-group">
+                <label for="calidad-producto">2. ¿Cómo calificarías la calidad de nuestros productos/servicios?</label>
+                <select id="calidad-producto" name="calidad-producto">
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                    <option value="Muy Mala">Muy Mala</option>
+                </select>
+            </div>
+            
+            <!-- Pregunta 3 -->
+            <div class="form-group">
+                <label for="atencion-cliente">3. ¿Cómo calificarías la atención recibida por nuestro personal?</label>
+                <select id="atencion-cliente" name="atencion-cliente">
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                    <option value="Muy Mala">Muy Mala</option>
+                </select>
+            </div>
+            
+            <!-- Pregunta 4 -->
+            <div class="form-group">
+                <label for="rapidez-servicio">4. ¿Qué tan rápido fue el servicio proporcionado?</label>
+                <select id="rapidez-servicio" name="rapidez-servicio">
+                    <option value="Muy Rápido">Muy Rápido</option>
+                    <option value="Rápido">Rápido</option>
+                    <option value="Adecuado">Adecuado</option>
+                    <option value="Lento">Lento</option>
+                    <option value="Muy Lento">Muy Lento</option>
+                </select>
+            </div>
+            
+            <!-- Pregunta 5 -->
+            <div class="form-group">
+                <label for="recomendacion">5. ¿Qué tan probable es que nos recomiendes a un amigo o colega?</label>
+                <select id="recomendacion" name="recomendacion">
+                    <option value="Muy Probable">Muy Probable</option>
+                    <option value="Probable">Probable</option>
+                    <option value="Poco Probable">Poco Probable</option>
+                    <option value="Nada Probable">Nada Probable</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar Encuesta</button>
+        </form>
+    </div>
+</body>
+</html>
